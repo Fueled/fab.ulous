@@ -197,7 +197,7 @@ class Fabulous(val activity: Activity) {
         container?.addView(element)
         return item
     }
-    
+
     /**
      * Builder class that help you setup a Fab.ulous menu.
      */
