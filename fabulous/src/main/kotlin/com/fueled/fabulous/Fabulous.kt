@@ -3,7 +3,6 @@ package com.fueled.fabulous
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.AnimatorSet
-import android.animation.ObjectAnimator
 import android.app.Activity
 import android.content.res.ColorStateList
 import android.os.Bundle
@@ -198,29 +197,7 @@ class Fabulous(val activity: Activity) {
         container?.addView(element)
         return item
     }
-
-    /**
-     * Generate a translation animation
-     *
-     * @param element The view to animate.
-     *
-     * @param x       The X position to reach at the end of the animation.
-     *
-     * @param y       The Y position to reach at the end of the animation.
-     *
-     * @return the AnimatorSet object
-     */
-    private fun getSubFABAnimation(element: View, x: Float, y: Float): AnimatorSet {
-        val anim = AnimatorSet()
-        val fabX = ObjectAnimator.ofFloat(element, View.X, x)
-        fabX.duration = MAIN_FAB_ANIMATION_DURATION.toLong()
-        val fabY = ObjectAnimator.ofFloat(element, View.Y, y)
-        fabY.duration = MAIN_FAB_ANIMATION_DURATION.toLong()
-
-        anim.play(fabX).with(fabY)
-        return anim
-    }
-
+    
     /**
      * Builder class that help you setup a Fab.ulous menu.
      */
