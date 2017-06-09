@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_test_one"
+        android:icon="@android:drawable/ic_btn_speak_now"
+        android:title="@android:string/search_go" />
+    <item
+        android:id="@+id/menu_test_two"
+        android:icon="@android:drawable/ic_delete"
+        android:title="@android:string/copy" />
+</menu>
