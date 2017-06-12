@@ -3,7 +3,6 @@ package com.fueled.fabulous.sample;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.view.View;
-import android.view.animation.PathInterpolator;
 
 import com.fueled.fabulous.FabulousPattern;
 import com.fueled.fabulous.FabulousPosition;

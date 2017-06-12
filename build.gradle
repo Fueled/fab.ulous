@@ -3,13 +3,14 @@ apply from: "extra/gradle/libraries.gradle"
 
 
 buildscript {
-    ext.kotlin_version = '1.1.2-4'
+    ext.kotlinVersion = '1.1.2-4'
     repositories {
         jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.3'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
     }
 }
 
