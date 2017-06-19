@@ -1,15 +1,20 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = libraryGroup
+version = libraryVersion
+
 
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 25
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
         versionCode 1
-        versionName "1.0"
+        versionName libraryVersion
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -33,8 +38,8 @@ dependencies {
 
     //test libs
     testCompile testLibraries.junit
-    testCompile "org.robolectric:robolectric:3.3.2"
-    testCompile 'org.robolectric:shadows-support-v4:3.0'
+    testCompile testLibraries.robolectric
+    testCompile testLibraries.robolectricShadow
 
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    compile libraries.kotlinStd
 }

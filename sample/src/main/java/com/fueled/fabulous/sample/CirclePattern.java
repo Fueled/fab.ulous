@@ -24,7 +24,6 @@ public class CirclePattern implements FabulousPattern {
         fabX.setDuration(MAIN_FAB_ANIMATION_DURATION);
         ObjectAnimator fabY = ObjectAnimator.ofFloat(element, View.Y, destY);
         fabY.setDuration(MAIN_FAB_ANIMATION_DURATION);
-
         anim.play(fabX).with(fabY);
         return anim;
     }
@@ -37,7 +36,6 @@ public class CirclePattern implements FabulousPattern {
         fabX.setDuration(MAIN_FAB_ANIMATION_DURATION);
         ObjectAnimator fabY = ObjectAnimator.ofFloat(element, View.Y, destY);
         fabY.setDuration(MAIN_FAB_ANIMATION_DURATION);
-
         anim.play(fabX).with(fabY);
         return anim;
     }
@@ -47,8 +45,8 @@ public class CirclePattern implements FabulousPattern {
     @Override
     public FabulousPosition getFinalPosition(@NotNull View subMenu, float fabX, float fabY, int position, int menuSize) {
         double spaceAlpha = (2 * Math.PI) / menuSize;
-        double posX = fabX + (Math.sin((position - (3 * menuSize - 1) / 2f) * spaceAlpha) * 200);
-        double posY = fabY + (Math.cos((position - (3 * menuSize - 1) / 2f) * spaceAlpha) * 200);
+        double posX = fabX + (Math.sin((position - (3 * menuSize - 1) / 2f) * spaceAlpha) * 400);
+        double posY = fabY + (Math.cos((position - (3 * menuSize - 1) / 2f) * spaceAlpha) * 400);
         return new FabulousPosition((float) posX, (float) posY);
     }
 }
