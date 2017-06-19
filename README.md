@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/Fueled/fab.ulous.svg)](https://jitpack.io/#Fueled/fab.ulous)
+
 # FAB.ulous
 FAB.ulous is a lightweight library that help build FAB menu from a menu XML and customize the the pattern you want!
 
@@ -18,7 +20,7 @@ Then add the dependency to the application module:
 
 ```groovy
 	dependencies {
-		compile 'com.github.fueled:fabulous:X.X.X'
+		compile 'com.github.Fueled:fab.ulous:X.X.X'
 	}
 ```
 
