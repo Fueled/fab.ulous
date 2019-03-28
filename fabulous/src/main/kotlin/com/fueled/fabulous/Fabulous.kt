@@ -162,7 +162,7 @@ class Fabulous(val activity: Activity) {
             newButton.setImageDrawable(item.icon)
             newButton.x = fab!!.x
             newButton.y = fab!!.y
-            if (backgroundTint > 0) {
+            if (backgroundTint < 0) {
                 newButton.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(activity, backgroundTint))
             }
             newButton.setOnClickListener({
